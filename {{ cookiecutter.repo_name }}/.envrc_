@@ -1,0 +1,8 @@
+eval $(pdm venv activate in-project)
+[ -r ./.env ] && source ./.env
+export IPYTHONDIR="`dirname $VIRTUAL_ENV`/.ipython"
+export JUPYTER_PATH="`dirname $VIRTUAL_ENV`/.jupyter"
+export JUPYTER_CONFIG_DIR="`dirname $VIRTUAL_ENV`/.jupyter"
+export JUPYTER_CONFIG_PATH="`dirname $VIRTUAL_ENV`/.jupyter"
+export JUPYTER_DATA="`dirname $VIRTUAL_ENV`/.jupyter"
+export PATH="`dirname $VIRTUAL_ENV`/bin:$PATH"
